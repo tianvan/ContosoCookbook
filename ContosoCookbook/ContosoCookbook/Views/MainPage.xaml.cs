@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ContosoCookbook
+namespace ContosoCookbook.Views
 {
 	public partial class MainPage : TabbedPage
 	{

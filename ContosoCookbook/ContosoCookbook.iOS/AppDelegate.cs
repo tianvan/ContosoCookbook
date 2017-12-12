@@ -1,11 +1,7 @@
-﻿using Prism;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using UIKit;
+﻿using Foundation;
+using Prism;
 using Prism.Ioc;
+using UIKit;
 
 namespace ContosoCookbook.iOS
 {
