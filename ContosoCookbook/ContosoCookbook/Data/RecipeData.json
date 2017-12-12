@@ -2,7 +2,7 @@
   "Groups": [
     {
       "UniqueId": "Chinese",
-      "Title": "Chinese",
+      "Title": "中国",
       "Subtitle": "Chinese",
       "ImagePath": "Images/Chinese/chinese_group_detail.png",
       "GroupImagePath": "Images/Chinese/chinese_group.png",
@@ -142,7 +142,7 @@
 
     {
       "UniqueId": "French",
-      "Title": "French",
+      "Title": "法国",
       "Subtitle": "French",
       "ImagePath": "Images/French/french_group_detail.png",
       "GroupImagePath": "Images/French/french_group.png",
@@ -304,7 +304,7 @@
 
     {
       "UniqueId": "German",
-      "Title": "German",
+      "Title": "德国",
       "Subtitle": "German",
       "ImagePath": "Images/German/german_group_detail.png",
       "GroupImagePath": "Images/German/german_group.png",
@@ -442,7 +442,7 @@
 
     {
       "UniqueId": "Indian",
-      "Title": "Indian",
+      "Title": "印度",
       "Subtitle": "Indian",
       "ImagePath": "Images/Indian/indian_group_detail.png",
       "GroupImagePath": "Images/Indian/indian_group.png",
@@ -645,7 +645,7 @@
 
     {
       "UniqueId": "Italian",
-      "Title": "Italian",
+      "Title": "意大利",
       "Subtitle": "Italian",
       "ImagePath": "Images/Italian/italian_group_detail.png",
       "GroupImagePath": "Images/Italian/italian_group.png",
@@ -805,7 +805,7 @@
 
     {
       "UniqueId": "Mexican",
-      "Title": "Mexican",
+      "Title": "墨西哥",
       "Subtitle": "Mexican",
       "ImagePath": "Images/Mexican/mexican_group_detail.png",
       "GroupImagePath": "Images/Mexican/mexican_group.png",

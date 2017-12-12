@@ -7,7 +7,7 @@
             xmlns:c="clr-namespace:ContosoCookbook.Converters"
             x:Class="ContosoCookbook.Views.MainPage"
             ItemsSource="{Binding RecipeGroups}"
-            Title="示例">
+            Title="吃货指南">
 
     <TabbedPage.Resources>
         <ResourceDictionary>
