@@ -7,5 +7,11 @@ namespace ContosoCookbook.ViewModels
     {
         private readonly INavigationService _navigationService;
         private readonly IRecipeService _recipeService;
+
+        public MainPageViewModel(INavigationService navigationService, IRecipeService recipeService)
+        {
+            _navigationService = navigationService;
+            _recipeService = recipeService;
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using Prism;
+﻿using ContosoCookbook.Views;
+using ContosoCookbook.Services;
+using Prism;
 using Prism.Ioc;
 using Prism.Unity;
 using System;
@@ -25,7 +27,10 @@ namespace ContosoCookbook
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IRecipeService, RecipeService>();
 
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage>();
         }
     }
 }
