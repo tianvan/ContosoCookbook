@@ -24,7 +24,7 @@
 
             <Label Text="{Binding Recipe.Title}"
                    FontSize="Large"
-                   LineBreakMode="WordWrap">
+                   LineBreakMode="WordWrap" IsVisible="False">
                 <!--<Label.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean"
                                 iOS="False"
