@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace ContosoCookbook
 {
-	public partial class MainPage : ContentPage
+	public partial class MainPage : TabbedPage
 	{
 		public MainPage()
 		{

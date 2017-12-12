@@ -148,8 +148,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Prism.Unity.Forms">
+      <Version>7.0.0.336-pre</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContosoCookbook\ContosoCookbook.csproj">

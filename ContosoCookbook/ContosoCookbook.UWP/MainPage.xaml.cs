@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Prism;
+using Prism.Ioc;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +21,16 @@ namespace ContosoCookbook.UWP
     {
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
 
-            LoadApplication(new ContosoCookbook.App());
+            LoadApplication(new ContosoCookbook.App(new UwpInitializer()));
+        }
+    }
+
+    public class UwpInitializer : IPlatformInitializer
+    {
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
         }
     }
 }
