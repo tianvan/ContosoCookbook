@@ -36,6 +36,7 @@ namespace ContosoCookbook
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<RecipePage>();
             containerRegistry.RegisterForNavigation<TestPage>();
         }
     }

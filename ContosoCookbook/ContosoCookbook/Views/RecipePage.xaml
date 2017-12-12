@@ -25,12 +25,12 @@
             <Label Text="{Binding Recipe.Title}"
                    FontSize="Large"
                    LineBreakMode="WordWrap">
-                <Label.IsVisible>
+                <!--<Label.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean"
                                 iOS="False"
                                 Android="False"
                                 WinPhone="True" />
-                </Label.IsVisible>
+                </Label.IsVisible>-->
             </Label>
 
             <ScrollView Grid.Row="1">

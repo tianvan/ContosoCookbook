@@ -32,12 +32,12 @@ namespace ContosoCookbook.ViewModels
 
         private async void RecipeSelected(Recipe recipe)
         {
-            var p = new NavigationParameters
+            var @params = new NavigationParameters
             {
                 { "recipe", recipe }
             };
 
-            await _navigationService.NavigateAsync("RecipePage", p);
+            await _navigationService.NavigateAsync("RecipePage", @params);
         }
 
         public override async void OnNavigatedTo(NavigationParameters parameters)
