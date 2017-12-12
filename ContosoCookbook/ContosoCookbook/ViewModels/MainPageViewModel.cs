@@ -24,6 +24,12 @@ namespace ContosoCookbook.ViewModels
         public DelegateCommand<Recipe> RecipeSelectedCommand =>
             _recipeSelectedCommand ?? (_recipeSelectedCommand = new DelegateCommand<Recipe>(RecipeSelected));
 
+        public MainPageViewModel(INavigationService navigationService, IRecipeService recipeService)
+        {
+            _navigationService = navigationService;
+            _recipeService = recipeService;
+        }
+
         private async void RecipeSelected(Recipe recipe)
         {
             var p = new NavigationParameters
@@ -34,15 +40,12 @@ namespace ContosoCookbook.ViewModels
             await _navigationService.NavigateAsync("RecipePage", p);
         }
 
-        void ExecuteCommandName(Recipe parameter)
+        public override async void OnNavigatedTo(NavigationParameters parameters)
         {
-
-        }
-
-        public MainPageViewModel(INavigationService navigationService, IRecipeService recipeService)
-        {
-            _navigationService = navigationService;
-            _recipeService = recipeService;
+            if (RecipeGroups is null)
+            {
+                RecipeGroups = new ObservableCollection<RecipeGroup>(await _recipeService.GetRecipeGroupsAsync());
+            }
         }
 
     }
