@@ -14,15 +14,20 @@ namespace ContosoCookbook
 {
     public partial class App : PrismApplication
     {
-        public App(IPlatformInitializer initializer=null):base(initializer)
+        public App() : this(null)
         {
 
         }
 
-        protected override void OnInitialized()
+        public App(IPlatformInitializer initializer = null) : base(initializer)
+        {
+
+        }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -31,6 +36,7 @@ namespace ContosoCookbook
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<TestPage>();
         }
     }
 }

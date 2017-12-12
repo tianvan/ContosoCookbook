@@ -124,11 +124,11 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\ContosoCookbook\ContosoCookbook.csproj">
-      <Project>{CFE1A121-1FA6-4A52-96E8-E9A8787EA242}</Project>
+      <Project>{c4016c26-1db6-4d60-b425-973b6179697a}</Project>
       <Name>ContosoCookbook</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ContosoCookbook.Models;
+using ContosoCookbook.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +15,10 @@ namespace ContosoCookbook.Views
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void OnItemTapped(object sender, ItemTappedEventArgs args)
+        {
+            ((MainPageViewModel)BindingContext).RecipeSelectedCommand.Execute((Recipe)args.Item);
+        }
+    }
 }
