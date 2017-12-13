@@ -27,7 +27,7 @@ namespace ContosoCookbook
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(LoginPage)}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -38,6 +38,7 @@ namespace ContosoCookbook
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<RecipePage>();
             containerRegistry.RegisterForNavigation<TestPage>();
+            containerRegistry.RegisterForNavigation<LoginPage>();
         }
     }
 }
