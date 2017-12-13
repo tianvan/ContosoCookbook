@@ -21,25 +21,30 @@
 
             <StackLayout Grid.Row="1"
                          Padding="30,0,30,30">
-                <Entry Placeholder="用户名"
+                <Entry Text="{Binding UserName}"
+                       Placeholder="用户名"
                        VerticalOptions="EndAndExpand" />
-                <Entry Placeholder="密码"
+                <Entry Text="{Binding Password}"
+                       Placeholder="密码"
                        IsPassword="True"
                        VerticalOptions="StartAndExpand" />
-                <Button Text="登 陆"
+                <Button Command="{Binding LoginCommand}" Text="登 陆"
                         BackgroundColor="#FF5722"
                         TextColor="White"
                         FontAttributes="Bold"
                         VerticalOptions="CenterAndExpand" />
             </StackLayout>
 
-            <StackLayout HorizontalOptions="CenterAndExpand" Grid.Row="3"
-                         Orientation="Horizontal" Spacing="0">
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         Grid.Row="3"
+                         Orientation="Horizontal"
+                         Spacing="0">
                 <Label Text="登陆即代表阅读并同意"
                        HorizontalOptions="Center"
                        FontSize="Micro" />
                 <Label Text="服务条款"
-                       TextColor="#2196F3" FontSize="Micro" />
+                       TextColor="#2196F3"
+                       FontSize="Micro" />
             </StackLayout>
 
         </Grid>

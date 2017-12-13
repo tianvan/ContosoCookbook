@@ -8,6 +8,15 @@ namespace ContosoCookbook.ViewModels
 {
     public class ViewModelBase : BindableBase, INavigatedAware
     {
+        private bool _isBusy;
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set => SetProperty(ref _isBusy, value, () => RaisePropertyChanged(nameof(IsNotBusy)));
+        }
+
+        public bool IsNotBusy => !IsBusy;
+
         public ViewModelBase()
         {
 
