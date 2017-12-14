@@ -49,12 +49,13 @@ namespace ContosoCookbook.ViewModels
             IsBusy = true;
             if (_authenticationService.Login(UserName, Password))
             {
-                await _navigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(MainPage)}");
+                await _navigationService.NavigateAsync("NavigationPage/MainPage");
             }
             else
             {
                 await _pageDialogService.DisplayAlertAsync("登陆失败", "用户名或密码错误！", "取消");
             }
+            IsBusy = false;
         }
 
         private bool CanExecuteLoginCommand() => !string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password) && IsNotBusy;

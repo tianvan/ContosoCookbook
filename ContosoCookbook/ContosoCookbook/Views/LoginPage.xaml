@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ContosoCookbook.Views.LoginPage"
-             NavigationPage.HasNavigationBar="False">
+             x:Class="ContosoCookbook.Views.LoginPage">
     <ContentPage.Content>
 
         <Grid>
@@ -28,7 +27,8 @@
                        Placeholder="密码"
                        IsPassword="True"
                        VerticalOptions="StartAndExpand" />
-                <Button Command="{Binding LoginCommand}" Text="登 陆"
+                <Button Command="{Binding LoginCommand}"
+                        Text="登 陆"
                         BackgroundColor="#FF5722"
                         TextColor="White"
                         FontAttributes="Bold"
