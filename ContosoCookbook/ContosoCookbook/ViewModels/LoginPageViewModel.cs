@@ -57,6 +57,6 @@ namespace ContosoCookbook.ViewModels
             }
         }
 
-        private bool CanExecuteLoginCommand => !string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password) && IsNotBusy;
+        private bool CanExecuteLoginCommand() => !string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password) && IsNotBusy;
     }
 }

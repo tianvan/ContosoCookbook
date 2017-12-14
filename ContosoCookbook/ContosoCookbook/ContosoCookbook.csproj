@@ -206,6 +206,7 @@
     <PackageReference Include="LiveXAML" Version="2.1.14" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.336-pre" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
 

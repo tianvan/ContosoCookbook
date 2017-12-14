@@ -7,5 +7,7 @@ namespace ContosoCookbook.Services
     public interface IAuthenticationService
     {
         bool Login(string userName, string password);
+
+        void Logout();
     }
 }
